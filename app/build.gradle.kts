@@ -18,13 +18,12 @@ android {
 
     buildTypes {
         getByName("debug") {
-            debuggable(true)
+            isDebuggable = true
         }
         getByName("release") {
-            debuggable(false)
+            isDebuggable = false
             // minifyEnabled(false)
             // shrinkResources(true)
-            proguardFiles = mutableListOf(getDefaultProguardFile("proguard-android-optimize.txt"), file("proguard-rules.pro"))
         }
     }
 
@@ -39,12 +38,15 @@ android {
 }
 
 dependencies {
+    implementation("androidx.activity:activity-ktx:1.3.1")
     // basic android dependencies
     implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.5.20")
     implementation ("androidx.core:core-ktx:1.5.0")
     implementation ("androidx.appcompat:appcompat:1.3.0")
     implementation ("com.google.android.material:material:1.3.0")
     implementation ("androidx.constraintlayout:constraintlayout:2.0.4")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
+    implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
 
     // tests
     testImplementation ("junit:junit:4.+")

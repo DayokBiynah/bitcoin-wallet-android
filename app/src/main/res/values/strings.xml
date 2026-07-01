@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Summer of Bitcoin Wallet</string>
+
+    <string name="create_wallet">Create a New Wallet</string>
+    <string name="recover_wallet">Recover an Existing Wallet</string>
+    <string name="wallet_title">₿ 0.00000000</string>
+    <string name="sync_wallet">sync wallet</string>
+    <string name="transaction_history">transaction history</string>
+    <string name="receive">receive</string>
+    <string name="send">send</string>
+    <string name="back_to_wallet">Back to wallet</string>
 </resources>

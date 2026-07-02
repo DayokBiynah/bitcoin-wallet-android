@@ -1,12 +1,25 @@
 <resources>
     <string name="app_name">Summer of Bitcoin Wallet</string>
-
-    <string name="create_wallet">Create a New Wallet</string>
-    <string name="recover_wallet">Recover an Existing Wallet</string>
-    <string name="wallet_title">₿ 0.00000000</string>
-    <string name="sync_wallet">sync wallet</string>
-    <string name="transaction_history">transaction history</string>
-    <string name="receive">receive</string>
-    <string name="send">send</string>
+    <string name="send">Send</string>
+    <string name="send2">send</string>
+    <string name="send_to">Send to</string>
+    <string name="address">address</string>
+    <string name="amount">Amount</string>
+    <string name="satoshis_hint">(satoshis)</string>
+    <string name="fees">Fees</string>
+    <string name="sat_vbyte">1 sat/vbyte</string>
+    <string name="broadcast_transaction">Broadcast transaction</string>
     <string name="back_to_wallet">Back to wallet</string>
+    <string name="bitcoin_testnet">Bitcoin\nTestnet</string>
+    <string name="create_new_wallet">Create a\nNew Wallet</string>
+    <string name="recover_existing_wallet">Recover an\nExisting Wallet</string>
+    <string name="receive_address">Receive Address</string>
+    <string name="recovery_fragment_info">This is the recovery phrase fragment</string>
+    <string name="recovery_phrase">Recovery\nPhrase</string>
+    <string name="transaction_fragment_info">This is the transactions fragment</string>
+    <string name="transactions">Transactions</string>
+    <string name="transaction_history">transaction history</string>
+    <string name="sync">sync</string>
+    <string name="receive">receive</string>
+    <string name="generate_new_address">Generate new address</string>
 </resources>

@@ -6,6 +6,7 @@
 package org.summerofbitcoin.wallet.wallet
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,8 +31,12 @@ class TransactionsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val navController = Navigation.findNavController(view)
+        Log.i("SobiWallet", "Showing demo transaction screen")
 
+        binding.pendingTransactionsContent.text = "No pending transactions"
+        binding.confirmedTransactionsContent.text = "No confirmed transactions"
+
+        val navController = Navigation.findNavController(view)
         binding.transactionsToWalletButton.setOnClickListener {
             navController.navigate(R.id.action_transactionsFragment_to_walletFragment)
         }

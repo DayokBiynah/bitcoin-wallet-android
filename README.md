@@ -1,18 +1,158 @@
 <div align="center">
-  <h1>Summer of Bitcoin Android Wallet</h1>
-  <br/>
-  <img src="./docs/images/header/summer.png" alt="Logo 1.0.0" width="200px" />
+
+# ₿ Android Bitcoin Wallet
+
+*A modern Android Bitcoin wallet built with Kotlin, Jetpack, and the Bitcoin Development Kit (BDK) architecture.*
+
+![Kotlin](https://img.shields.io/badge/Kotlin-100%25-blue)
+![Android](https://img.shields.io/badge/Platform-Android-green)
+![Bitcoin](https://img.shields.io/badge/Bitcoin-Testnet-orange)
+![License](https://img.shields.io/badge/License-Apache--2.0-lightgrey)
+
 </div>
-<br/>
 
-This repository contains the source code for a workshop on how to build Bitcoin wallets on Android using the [bitcoindevkit](https://github.com/bitcoindevkit). The workshop is a 1-day walkthrough of the codebase and building of the wallet, and comes with a webpage tutorial breaking the journey into 10 distinct tasks. [Check out the website here](https://thunderbiscuit.github.io/summerofbitcoin-wallet/).
+---
 
-The wallet is purposely light on Android-specific features, aiming to keep the focus on bitcoin integration with the application as well as the bitcoindevkit API.
+# Overview
 
-### Bitcoindevkit
-The bitcoindevkit project is much more than an Android library. A modern kit to help developers build bitcoin wallets, it's a [Rust library](https://github.com/bitcoindevkit/bdk) with language bindings for [Android and JVM](https://github.com/bitcoindevkit/bdk-jni), and a [cli](https://github.com/bitcoindevkit/bdk-cli) tool to boot! If you'd like to learn more or contribute, check out the [official website](https://bitcoindevkit.org/) or join our [Discord server](https://discord.gg/d7NkDKm).
+This project is an Android Bitcoin wallet inspired by the Summer of Bitcoin open-source wallet initiative. It demonstrates the architecture and user experience behind modern self-custodial cryptocurrency wallets while leveraging contemporary Android development practices.
 
-<br/>
-<div align="center">
-  <img src="./docs/images/screenshots/ui-screenshots.png" alt="screenshots" width="800px">
-</div>
+The application provides a clean interface for wallet creation, recovery, transaction management, and Bitcoin wallet operations on the Bitcoin Testnet.
+
+The project is structured around the Bitcoin Development Kit (BDK) architecture, illustrating how native Bitcoin functionality can be integrated into Android applications through modular wallet management and blockchain interaction.
+
+---
+
+# Features
+
+- Bitcoin wallet creation
+- Wallet recovery workflow
+- Transaction history interface
+- Send Bitcoin interface
+- Receive Bitcoin interface
+- Wallet navigation using Jetpack Navigation
+- Fragment-based architecture
+- Material Design UI
+- View Binding
+- Modular Android architecture
+- Testnet wallet workflow
+
+---
+
+# Technologies
+
+### Mobile Development
+
+- Kotlin
+- Android Studio
+- Android SDK
+- XML Layouts
+- Jetpack Navigation Component
+- View Binding
+- Material Design Components
+- Gradle
+
+### Bitcoin & Web3
+
+- Bitcoin Development Kit (BDK) architecture
+- Bitcoin Testnet
+- HD Wallet concepts (BIP-32 / BIP-39 / BIP-84)
+- Descriptor-based wallet architecture
+- Bitcoin address generation concepts
+- PSBT (Partially Signed Bitcoin Transactions) workflow
+- Self-custodial wallet architecture
+
+---
+
+# Architecture
+
+The application follows a modular Android architecture separating the wallet engine, navigation layer, user interface, and persistent storage.
+
+```
+UI
+│
+├── Wallet Dashboard
+├── Send Bitcoin
+├── Receive Bitcoin
+├── Transaction History
+└── Wallet Recovery
+
+        │
+
+Navigation Component
+
+        │
+
+Wallet Layer
+
+        │
+
+Repository Layer
+
+        │
+
+Bitcoin Development Kit (BDK)
+```
+
+---
+
+# Project Structure
+
+```
+app/
+├── data/
+│   ├── Repository
+│   └── Wallet
+│
+├── wallet/
+│   ├── WalletFragment
+│   ├── SendFragment
+│   ├── ReceiveFragment
+│   ├── TransactionsFragment
+│   └── WalletActivity
+│
+├── utilities/
+├── navigation/
+└── resources/
+```
+
+---
+
+# Skills Demonstrated
+
+- Android application development
+- Mobile UI/UX implementation
+- Fragment lifecycle management
+- Navigation Component
+- State management
+- Android resource management
+- Bitcoin wallet architecture
+- Repository design pattern
+- Gradle dependency management
+- Open-source software integration
+- Legacy project modernization
+- Debugging dependency compatibility issues
+
+---
+
+# Future Improvements
+
+- Upgrade to the latest Bitcoin Development Kit (BDK)
+- Full Bitcoin transaction signing
+- QR code scanning
+- Wallet encryption
+- Secure key storage
+- Biometric authentication
+- Multi-wallet support
+- Mainnet/Testnet switching
+- Lightning Network integration
+
+---
+
+# Acknowledgements
+
+This project was developed by adapting and modernizing the Summer of Bitcoin Android Wallet open-source project for current Android tooling while preserving the underlying wallet architecture and educational objectives.
+
+Original inspiration:
+
+https://github.com/thunderbiscuit/summerofbitcoin-wallet

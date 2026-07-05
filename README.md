@@ -151,8 +151,4 @@ app/
 
 # Acknowledgements
 
-This project was developed by adapting and modernizing the Summer of Bitcoin Android Wallet open-source project for current Android tooling while preserving the underlying wallet architecture and educational objectives.
-
-Original inspiration:
-
-https://github.com/thunderbiscuit/summerofbitcoin-wallet
+Summer of Bitcoin
